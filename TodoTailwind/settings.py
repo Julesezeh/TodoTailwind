@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'User',
     'Todo',
     'tailwind',
-    'django_browser_reload'
+    'django_browser_reload',
+    'todo_app_theme'
 
 ]
 
