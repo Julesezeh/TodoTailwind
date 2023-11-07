@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     
 
     'User',
-    'Todo'
+    'Todo',
+    'tailwind',
+    'django_browser_reload'
+
 ]
 
 MIDDLEWARE = [
