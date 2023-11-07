@@ -134,3 +134,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = "User.CustomUser"
 
 TAILWIND_APP_NAME = "todo_app_theme"
+
+NPM_BIN_PATH = "C:\\Program Files (x86)\\nodejs\\npm.cmd"
