@@ -132,3 +132,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 AUTH_USER_MODEL = "User.CustomUser"
+
+TAILWIND_APP_NAME = "todo_app_theme"
