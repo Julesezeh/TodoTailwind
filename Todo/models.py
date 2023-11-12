@@ -10,4 +10,6 @@ class Todo(models.Model):
     time_created = models.DateTimeField(auto_now_add=True)
     time_due = models.DateTimeField()
     is_active = models.BooleanField()
-    
+
+    def __str__(self):
+        return f"Task: {self.task}\nDue: {self.time_due}"
