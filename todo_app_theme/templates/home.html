@@ -1,7 +1,27 @@
 {% extends 'base.html' %}
 {% load static tailwind_tags %}
 
+<script>
+    console.log({todos})
+</script>
 
 {% block content %}
-<h1>Does it work?</h1>
+        <div class="w-6 grid-flow-col grid">
+            {% for task in todos  %}
+
+                <div class="w-8">
+                    <div class="flex flex-row">
+                        {{task.task}}
+                        <div>
+                            {{task.time_due}}
+                        </div>
+    
+                    </div>
+                    <div>
+                        {{task.description}}
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
 {% endblock content %}
