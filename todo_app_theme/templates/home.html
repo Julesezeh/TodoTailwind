@@ -6,22 +6,22 @@
 </script>
 
 {% block content %}
-        <div class="w-full mt-10 px-12 grid-flow-col grid h-6">
+        <div class="w-full mt-3 mb-10 px-12 grid-flow-row lg:grid-flow-col grid h-6">
             {% for task in todos  %}
 
-                <div class="">
+                <div class="lg:w-[80%] w-[100%]  p-12  border-solid border-4 shadow-lg">
                     <div class="flex  flex-row">
-                        <div class="px-12 text-green-600 text-5xl">
+                        <div class="px-12 text-green-600 text-5xl w-111 cursor-pointer hover:text-pink-300">
                         {{task.task}}
                         </div>
-                        <div>
-                            {{task.time_due}}
+                        <div class="text-sm text-gray-700">
+                            {{task.time_due.time}}
                         </div>
-    
                     </div>
-                    <div class="pt-12">
-                        {{task.description}}
+                    <div class="form-checkbox shadow-lg cursor-pointer">
+
                     </div>
+
                 </div>
             {% endfor %}
 
