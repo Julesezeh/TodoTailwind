@@ -9,13 +9,13 @@
         <div class="w-full mt-3 mb-10 px-12 grid-flow-row lg:grid-flow-col grid h-6">
             {% for task in todos  %}
 
-                <div class="lg:w-[80%] w-[100%]  p-12  border-solid border-4 shadow-lg">
+                <div class="lg:w-[80%] w-[70%]  p-12  border-solid border-4 shadow-lg font-sans">
                     <div class="flex  flex-row">
-                        <div class="px-12 text-green-600 text-5xl w-111 cursor-pointer hover:text-pink-300">
+                        <div class="px-12 text-green-600 text-xl w-30 cursor-pointer hover:text-pink-300">
                         {{task.task}}
                         </div>
                         <div class="text-sm text-gray-700 text-right">
-                            {{task.time_due.time}}
+                            <{{task.time_due.time}}>
                         </div>
                     </div>
                     <div class="form-checkbox shadow-lg cursor-pointer">
